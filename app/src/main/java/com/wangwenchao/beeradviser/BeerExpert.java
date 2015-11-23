@@ -1,0 +1,22 @@
+/**
+ * Created by Wenchao on 2015-11-22.
+ */
+package com.wangwenchao.beeradviser;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BeerExpert {
+    List<String> getBrands (String color){
+        List<String> brands = new ArrayList<>();
+        if (color.equals("amber")){
+            brands.add("Jack Amber");
+            brands.add("Red Moose");
+        } else {
+            brands.add("Jail Pale Ale");
+            brands.add("Gout Stout");
+        }
+        return brands;
+    }
+}
